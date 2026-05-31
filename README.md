@@ -1,6 +1,6 @@
 # Movie Recommendation System 
 
-My first real ML project. I wanted to learn how Netflix decides what to show you next, so I built a version of it myself using nothing but Python and some math. The idea is simple — you type a movie name and it finds similar ones based on genre, director, cast, and plot keywords. There's also fuzzy search so it doesn't break if you typo the title.
+My first real ML project. I wanted to learn how Netflix decides what to show you next, so I built a version of it myself using nothing but Python and some math. The idea is simple, you type a movie name and it finds similar ones based on genre, director, cast, and plot keywords. There's also fuzzy search so it doesn't break if you typo the title.
 
 ---
 
