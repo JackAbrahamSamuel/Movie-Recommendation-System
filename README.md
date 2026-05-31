@@ -1,4 +1,4 @@
-# movie-recommender
+# Movie Recommendation System 
 
 My first real ML project. I wanted to learn how Netflix decides what to show you next, so I built a version of it myself using nothing but Python and some math. The idea is simple — you type a movie name and it finds similar ones based on genre, director, cast, and plot keywords. There's also fuzzy search so it doesn't break if you typo the title.
 
@@ -6,13 +6,13 @@ My first real ML project. I wanted to learn how Netflix decides what to show you
 
 ## ML Concepts
 
-**TF-IDF** — instead of just counting words, it weighs them by how rare they are across all 45k movies. So "Christopher Nolan" means more than "Action" because half the dataset is action movies.
+**TF-IDF** : instead of just counting words, it weighs them by how rare they are across all 45k movies. So "Christopher Nolan" means more than "Action" because half the dataset is action movies.
 
-**Cosine similarity** — measures the angle between two movie vectors, not the distance. Two movies can have wildly different description lengths and still score as nearly identical if they point in the same direction.
+**Cosine similarity** : measures the angle between two movie vectors, not the distance. Two movies can have wildly different description lengths and still score as nearly identical if they point in the same direction.
 
-**Content-based filtering** — recommendations come from the movie's own attributes, not from what other users watched. Means it works from day one with zero user data.
+**Content-based filtering** : recommendations come from the movie's own attributes, not from what other users watched. Means it works from day one with zero user data.
 
-**Cold-start problem** — what happens when you have no user history to learn from. Content-based filtering sidesteps it entirely, which is why I went with this approach over collaborative filtering.
+**Cold-start problem** : what happens when you have no user history to learn from. Content-based filtering sidesteps it entirely, which is why I went with this approach over collaborative filtering.
 
 ---
 
@@ -30,14 +30,6 @@ https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
 
 ---
 
-## Setup
-
-```bash
-pip install -r requirements.txt
-python recommender_tmdb.py
-```
-
----
 
 ## How it works
 
